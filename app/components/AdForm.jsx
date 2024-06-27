@@ -1,14 +1,14 @@
 'use client';
 import { CreateAdd } from '../../utils/action_placeadd';
-import {useFormStatus }from 'react-dom';
+// import {useFormStatus }from 'react-dom';
 
 const SubmitBtn=()=>{
- const pending=useFormStatus();
+//  const pending=useFormStatus();
 
   return(
 
-    <button className='btn btn-accent my-2 btn-md' disabled={pending}>
-      {pending?'wait':'Place ad'}
+    <button className='btn btn-accent my-2 btn-md'>
+     Place ad
     </button>
   )
 }
